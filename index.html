@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="conatiner">
+        <h1 class="label"> User login</h1>
+
+        <form class="login_form" action="after.html"  method="post" name="form" onsubmit="return validaded()">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please fill up your email or phone</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="pass_error">Please fill up your Password</div>
+        <button type="submit">Login</button>
+
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
